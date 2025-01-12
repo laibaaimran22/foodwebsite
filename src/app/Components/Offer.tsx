@@ -52,4 +52,3 @@ const SpecialOffers: React.FC = () => {
 
 export default SpecialOffers;
 
-

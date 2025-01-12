@@ -1,6 +1,5 @@
-
-
 import React from "react";
+import Image from "next/image";
 
 const FloatingImageContentBlock = () => {
   return (
@@ -36,15 +35,18 @@ const FloatingImageContentBlock = () => {
           </li>
           <br />
           <li>
-            <strong>Carnivore's Feast:</strong> Packed with pepperoni, sausage, smoked ham, and crispy bacon.
+            <strong>Carnivore&apos;s Feast:</strong> Packed with pepperoni, sausage, smoked ham, and crispy bacon.
           </li>
           <br />
         </ul>
       </div>
       <div className="md:w-1/2 mt-6 md:mt-0">
-        <img
+        <Image
           src="https://i.pinimg.com/474x/37/b6/60/37b660cb40988dda83c8d345f62c83da.jpg"
           alt="mouthwatering pizzas"
+          layout="responsive"
+          width={500} // Adjust the width as needed
+          height={300} // Adjust the height as needed
           className="w-full h-auto rounded-lg shadow-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
         />
       </div>

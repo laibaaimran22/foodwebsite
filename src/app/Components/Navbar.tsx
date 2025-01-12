@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { FaPizzaSlice } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaBoltLightning } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
+import Image from 'next/image'; // Import Image component from Next.js
 
 export default function Navbar() {
   return (
@@ -32,10 +32,12 @@ export default function Navbar() {
             </p>
           </div>
           <FaCartShopping className="w-7 h-7 text-[#333333] hover:text-gray-900 transition duration-300" />
-          <img
+          <Image
             className="w-10 h-10 rounded-full ring-2 ring-[#333333]"
             src="https://i.pinimg.com/736x/7d/58/1b/7d581b7a1fdb2041d3008600074fe9f5.jpg"
             alt="User Avatar"
+            width={40} // Width of the image
+            height={40} // Height of the image
           />
         </div>
       </div>

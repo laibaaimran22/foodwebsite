@@ -1,16 +1,17 @@
-
-
 import React from 'react';
+import Image from 'next/image';
 
 export default function Banner() {
   return (
     <div className="relative overflow-hidden bg-[#fff8e1] font-sans mb-7">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-with-wooden-backdrop-heated-pepperoni-pizza-seen-from_872147-5302.jpg"
           alt="Irresistibly Cheesy, Perfectly Baked - Your Favorite Pizza is Here!"
-          className="w-full h-full object-cover object-center"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
         />
       </div>
 

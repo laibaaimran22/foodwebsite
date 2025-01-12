@@ -1,6 +1,6 @@
-
 import { Product } from "@/pages/types";
 import React from 'react';
+import Image from 'next/image'; // Import Image from Next.js
 
 interface ProductCardProps extends Product {
   onAddToCart: (product: Product) => void;
@@ -15,10 +15,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="bg-gradient-to-b from-gray-100 to-gray-300 p-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-      <img
+      <Image
         src={image}
         alt={name}
         className="w-full h-56 object-cover rounded-md mb-4 transform transition-all duration-300 ease-in-out hover:scale-110"
+        width={400} // Specify the width of the image
+        height={224} // Specify the height of the image (keeping aspect ratio)
       />
       <h3 className="text-xl font-semibold mb-2 text-gray-800">{name}</h3>
       <p className="text-lg text-gray-600 mb-4">${price}</p>

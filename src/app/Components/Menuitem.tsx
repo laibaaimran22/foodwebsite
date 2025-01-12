@@ -1,8 +1,7 @@
-
 'use client';
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import Image from "next/image"; // Import the Image component from Next.js
 import ProductCard from "./ProductCard";
 import { Product } from "@/pages/types";
 
@@ -10,8 +9,6 @@ const Menu = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
-  const [isCheckout, setIsCheckout] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     async function fetchProducts() {
@@ -36,8 +33,6 @@ const Menu = () => {
   };
 
   const toggleCart = () => setShowCart((prev) => !prev);
-
-  const goToCheckout = () => setIsCheckout(true);
 
   const clearCart = () => {
     setCart([]);
@@ -91,9 +86,11 @@ const Menu = () => {
                         key={index}
                         className="flex items-center justify-between mb-6"
                       >
-                        <img
+                        <Image
                           src={product.image}
                           alt={product.name}
+                          width={96} // Adjust width as needed
+                          height={96} // Adjust height as needed
                           className="w-20 h-20 sm:w-24 sm:h-24"
                         />
                         <span>{product.name} - ${product.price}</span>
@@ -106,7 +103,6 @@ const Menu = () => {
                     </span>
                     <div>
                       <button
-                        onClick={goToCheckout}
                         className="bg-green-600 py-3 px-8 rounded-lg text-white shadow-md hover:bg-green-700 transform hover:scale-110"
                       >
                         Proceed to Checkout
@@ -132,6 +128,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-

@@ -56,4 +56,3 @@ const getStepDescription = (step: number) => {
       return "";
   }
 };
-

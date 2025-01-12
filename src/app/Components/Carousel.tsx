@@ -1,5 +1,5 @@
-
 import React from "react";
+import Image from "next/image";
 
 export default function Carousel() {
   return (
@@ -12,9 +12,11 @@ export default function Carousel() {
               href="#"
               className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <Image
                 src="https://preppykitchen.com/wp-content/uploads/2021/10/Cheese-Pizza-Recipe-Card-500x375.jpg"
                 alt="Cheese Pie"
+                width={500} // Adjust the width as needed
+                height={375} // Adjust the height as needed
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
@@ -28,9 +30,11 @@ export default function Carousel() {
               href="#"
               className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <Image
                 src="https://www.ezcater.com/lunchrush/wp-content/uploads/sites/2/2017/10/shutterstock_570541132.jpg.webp"
                 alt="Veggie Pie"
+                width={500} // Adjust the width as needed
+                height={375} // Adjust the height as needed
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
@@ -44,9 +48,11 @@ export default function Carousel() {
               href="#"
               className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <Image
                 src="https://www.ezcater.com/lunchrush/wp-content/uploads/sites/2/2017/10/shutterstock_514457074-768x512.jpg.webp"
                 alt="Pepperoni Pie"
+                width={500} // Adjust the width as needed
+                height={375} // Adjust the height as needed
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
@@ -60,9 +66,11 @@ export default function Carousel() {
               href="#"
               className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <Image
                 src="https://chasety.com/wp-content/uploads/2024/05/realchasecurtis_Meat_Lovers_Pizza_sitting_on_plate_on_dark_conc_fa5643ad-de21-4982-9629-47d8460a51d5.png"
                 alt="Meat Pie"
+                width={500} // Adjust the width as needed
+                height={375} // Adjust the height as needed
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
@@ -76,9 +84,11 @@ export default function Carousel() {
               href="#"
               className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
+              <Image
                 src="https://www.ezcater.com/lunchrush/wp-content/uploads/sites/2/2017/10/shutterstock_184944413-768x512.jpg.webp"
                 alt="BBQ Chicken Pie"
+                width={500} // Adjust the width as needed
+                height={375} // Adjust the height as needed
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
